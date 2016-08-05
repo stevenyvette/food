@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8">
+	<title>食品溯源</title>
+	<link rel="shortcut icon" href="assets/img/favicon.ico"></link>
+	<link rel="stylesheet" type="text/css" href="assets/dataTables.bootstrap.css" />
+	<script src="lib/echarts.js"></script>
+	<script src="lib/function.js"></script>
+	<script src="lib/dark.js"></script>
+	<!--
+	<script src="lib/dataTables.bootstrap.js"></script>
+	<script src="lib/jquery.dataTables.js"></script>
+	-->
+	<script src="http://api.map.baidu.com/api?v=2.0&ak=jHdYrzZloMeXNZLuZI34VbstbpAS0qAo"></script>
+	<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
+	<script type="text/javascript" scr="BMapCoordSys.js"></script>
+	<script type="text/javascript" src="lib/jquery.js"></script>
+	<script type="text/javascript" src="lib/dataTool.js"></script>
+	<script type="text/javascript" src="map/china.js"></script>
+	<script type="text/javascript" src="map/world.js"></script>
+</head>
+
+<body>
+	<!--
+    	作者：offline
+    	时间：2016-08-02
+    	描述：
+    
+	<div class="table-responsive">
+		<table class="table table-striped table-bordered table-hover" id="dataTables-example">
+			<thead>
+				<tr>
+					<th>编号</th>
+					<th>商户名</th>
+					<th>进货商数量</th>
+					<th>出货商数量</th>
+					<th>类目</th>
+				</tr>
+			</thead>
+			<tbody id="promatrix-table">
+			</tbody>
+		</table>
+	</div>
+	-->
+	<div id="map-2" style="height: 800px;width: 100%;"></div>
+	<div id="map-1" style="height: 800px;width: 100%;"></div>
+	<div id="force-graph" style="height: 800px;width: 100%"></div>
+</body>
+
+<script>
+	force_graph();
+	map_1();
+	map_2();
+</script>
